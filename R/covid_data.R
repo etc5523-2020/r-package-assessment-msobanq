@@ -1,6 +1,6 @@
 #' World Covid-19 Data
 #' 
-#' This dataset countains covid-19 data on all countries.
+#' This dataset countains covid-19 data on **all** countries.
 #' 
 #' TODO: add description
 #' 

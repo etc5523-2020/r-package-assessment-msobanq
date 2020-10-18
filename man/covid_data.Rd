@@ -14,7 +14,7 @@ The data below was obtained from https://ourworldindata.org/coronavirus
 covid_data
 }
 \description{
-This dataset countains covid-19 data on all countries.
+This dataset countains covid-19 data on \strong{all} countries.
 }
 \details{
 TODO: add description
