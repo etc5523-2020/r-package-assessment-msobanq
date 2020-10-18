@@ -1,5 +1,5 @@
-Package: yourPkg
-Title: What the Package Does (One Line, Title Case)
+Package: covidham
+Title: Covid-19 Data on Asian Countries 
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Muhammad Soban",
@@ -7,9 +7,9 @@ Authors@R:
            role = c("aut", "cre"),
            email = "mqas0003@student.monash.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (My package contains a shiny application that revolves 
+Description: This package contains a shiny application that revolves 
 around different factors revolving around Covid-19. The data only encompuses Asia. 
-Users can use this application to make their own interpretations on the subject.).
+Users can use this application to make their own interpretations on the subject.
 License: GLP-3 | file LICENSE
 Encoding: UTF-8
 LazyData: true
