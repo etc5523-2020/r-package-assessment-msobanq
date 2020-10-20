@@ -1,0 +1,14 @@
+template:
+  params:
+    bootswatch: cerulean
+    
+navbar:
+  structure:
+    right: [help]
+  components:
+    home: ~
+    help:
+      text: Get Started
+      href: articles/covid.html
+      
+  

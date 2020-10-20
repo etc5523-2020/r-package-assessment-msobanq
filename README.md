@@ -20,7 +20,7 @@ set, functions and the application.
 
 ```` 
 
-And the development version from [GitHub](https://github.com/) with:
+The development version can be installed from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")

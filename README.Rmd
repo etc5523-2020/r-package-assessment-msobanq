@@ -28,7 +28,7 @@ The goal of covidham is to is for user to get access to the covid data set, func
 <!-- install.packages("covidham") -->
 ```
 
-And the development version from [GitHub](https://github.com/) with:
+The development version can be installed from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
