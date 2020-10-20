@@ -1,12 +1,12 @@
 #' 
 #' 
-#' @export launch_app
+#' @export 
 #' 
 #' @return shiny application object
 #' 
 #' 
 #' 
-#' @import shiny
+#' 
 #' 
 #' 
 launch_app <- function() {
