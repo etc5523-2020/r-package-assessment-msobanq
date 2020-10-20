@@ -2,3 +2,5 @@
 ^\.github$
 ^.*\.Rproj$
 ^README\.Rmd$
+^doc$
+^Meta$

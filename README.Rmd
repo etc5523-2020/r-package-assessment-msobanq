@@ -16,12 +16,17 @@ knitr::opts_chunk$set(
 # covidham
 
 <!-- badges: start -->
-[![R build status](https://github.com/etc5523-2020/r-package-assessment-msobanq/workflows/R-CMD-check/badge.svg)](https://github.com/etc5523-2020/r-package-assessment-msobanq/actions)
 <!-- badges: end -->
 
-The goal of covidham is to ...
+The goal of covidham is to is for user to get access to the covid data set, functions and the application.
 
 ## Installation
+
+<!-- You can install the released version of covidham from [CRAN](https://CRAN.R-project.org) with: -->
+
+<!-- ``` r -->
+<!-- install.packages("covidham") -->
+```
 
 And the development version from [GitHub](https://github.com/) with:
 
@@ -33,9 +38,17 @@ devtools::install_github("etc5523-2020/r-package-assessment-msobanq")
 
 This is a basic example which shows you how to solve a common problem:
 
-```{r example}
+```{r example, message = FALSE, warning = FALSE}
 library(covidham)
 library(tibble)
+library(dplyr)
 
-glimpse(covid_data)
+# the data set is huge so only a few variables are selected for a more appropriate vignette
+
+covid_data %>% filter(continent == "Asia") %>% 
+  select(location, 
+         date, 
+         total_cases, 
+         stringency_index) %>% tibble()
 ```
+

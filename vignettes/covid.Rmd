@@ -1,0 +1,36 @@
+---
+title: "Covid World Data"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Covid World Data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The app is simple to launch.
+
+The app helps users to interact and help explore covid-19 cases in Asia. The app also refelcts of other underlying factors tat might be contributing to the pandemic indefinitely. This data is sourced from. 
+
+```{r setup, message=FALSE, warning=FALSE}
+library(covidham)
+library(tibble)
+library(dplyr)
+
+# the data set is huge so only a few variables are selected for a more appropriate vignette
+
+covid_data %>% filter(continent == "Asia") %>% 
+  select(location, 
+         date, 
+         total_cases, 
+         stringency_index) %>% tibble()
+
+
+
+```
