@@ -4,6 +4,7 @@ library(shiny)
 library(plotly)
 library(DT)
 library(shinythemes)
+library(covidham)
 
 c19 <- read_csv("covid_data.csv")
 
@@ -73,14 +74,15 @@ ui <- fluidPage(theme = shinytheme("superhero"),mainPanel(theme = "bootstrap.css
         
         tabPanel("Stringency Index", tagList(h4(style = "color:white;","The graph shows the 
         Stringency Index of most Asian countries, telling each countries response to the covid-19 pandemic.
-                 It is interesting how some countries hit 100 on the Stringency Index in a similar time frame."),plotlyOutput("plot", height = "800"), "*HINT: Select
+                 It is interesting how some countries hit 100 on the Stringency Index in a similar time frame."),
+                                                                                                                               plotlyOutput("plot", height = "800"), "*HINT: Select
                                              any country of your choice from the legend by double clicking, and select any other country or countries to make comparisons.
                                              Make it easier by selecting the compare data on hover option from the top right corner.")),
         
         tabPanel("Interact",tagList(h3(style = "color:white;", "The first two variables determine the axies, the third 
-                 variable determines the size of the bubble or point."), varSelectInput("variable", "Variable:", interactive, selected = "handwashing_facilities"),
-                 varSelectInput("vari", "Variable:", interactive, selected =  "hospital_beds_per_thousand"),
-                 varSelectInput("var", "Variable:", interactive, selected = "total_deaths"), 
+                 variable determines the size of the bubble or point."), interact(inputId = "variable", label = "Variable", data = interactive, selected = "handwashing_facilities"),
+                                    interact(inputId = "vari", label = "Variable", data = interactive, selected =  "hospital_beds_per_thousand"),
+                                    interact(inputId = "var", label = "Variable", data = interactive, selected = "total_deaths"), 
                  plotlyOutput("plo", height = "500"), "*HINT: Isolate the group of countries you are interested in by selecting
                  them from the legend. Use the varibles as deemed appropriate for comparison from the drop down menues at the top.")), 
         
@@ -109,7 +111,7 @@ ui <- fluidPage(theme = shinytheme("superhero"),mainPanel(theme = "bootstrap.css
 server <- function(input, output) {
     
     output$plot <- renderPlotly({ 
-       si %>% ggplot(aes(x= date, 
+       si %>% ggplot(aes(x= date,
                          y = stringency_index, 
                           color = location)) + 
             geom_line() + ggtitle("Stringency Index of Asian Countries") + scale_color_discrete(name = "Country")
@@ -117,7 +119,7 @@ server <- function(input, output) {
     })
     
     output$plo <- renderPlotly({
-        interactive %>% ggplot(aes(x = !!input$variable,
+        interactive %>% ggplot(aes(x = !!input$variable ,
                                                            y = !!input$vari, 
                                                            color = location)) + 
             geom_point(aes(size=!!input$var)) })
