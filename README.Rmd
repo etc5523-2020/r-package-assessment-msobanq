@@ -64,7 +64,7 @@ covidham::launch_app()
 Launching the app should take you to this page of the app
 
 ```{r, fig.align='center', fig.cap="The Landing Page of my Shiny App", echo=FALSE}
-knitr::include_graphics("inst/extdata/app launch page.PNG")
+knitr::include_graphics("man/image/page.PNG")
 ```
 
 
