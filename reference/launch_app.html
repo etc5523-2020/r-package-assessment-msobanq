@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>World Covid-19 Data — covid_data • covidham</title>
+<title>Launches the shiny app from this function — launch_app • covidham</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="World Covid-19 Data — covid_data" />
-<meta property="og:description" content="the data is used in the app and is extensive, it not only focuses on the status of corona virus cases but also gives data on other factors that might be contributing to the pandemic." />
+<meta property="og:title" content="Launches the shiny app from this function — launch_app" />
+<meta property="og:description" content="The launch_app() function searches the directory provided to access the app.R from the inst folder" />
 
 
 
@@ -118,27 +118,24 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>World Covid-19 Data</h1>
-    <small class="dont-index">Source: <a href='https://github.com/etc5523-2020/r-package-assessment-msobanq/blob/master/R/covid_data.R'><code>R/covid_data.R</code></a></small>
-    <div class="hidden name"><code>covid_data.Rd</code></div>
+    <h1>Launches the shiny app from this function</h1>
+    <small class="dont-index">Source: <a href='https://github.com/etc5523-2020/r-package-assessment-msobanq/blob/master/R/launch_app.R'><code>R/launch_app.R</code></a></small>
+    <div class="hidden name"><code>launch_app.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>the data is used in the app and is extensive, it not only focuses on the status of corona virus cases but also gives data on other factors that might be contributing to the pandemic.</p>
+    <p>The launch_app() function searches the directory provided to access the app.R from the inst folder</p>
     </div>
 
-    <pre class="usage"><span class='va'>covid_data</span></pre>
+    <pre class="usage"><span class='fu'>launch_app</span><span class='op'>(</span><span class='op'>)</span></pre>
 
 
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>An object of class <code>data.frame</code> with 47749 rows and 41 columns.</p>
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
-
-    <p>The data below was obtained from https://ourworldindata.org/coronavirus</p>
+    <p>shiny application object</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>This dataset countains covid-19 data on <strong>all</strong> countries.</p>
+    <p>The path has been stored in the appDir (app directory)</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
