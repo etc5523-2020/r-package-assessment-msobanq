@@ -1,3 +1,3 @@
 
 
-test_that("plot_check()", {expect_output (str(stringency), "int [1:8]", fixed = TRUE )})
+test_that("plot_check()", {expect_output (str(stringency),  "function (input)", fixed = TRUE )})
