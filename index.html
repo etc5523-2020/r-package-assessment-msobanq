@@ -68,66 +68,7 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-
-<hr>
-<div id="output-github_document" class="section level2">
-<h2 class="hasAnchor">
-<a href="#output-github_document" class="anchor"></a>output: github_document</h2>
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-<p><code>{r, include = FALSE} knitr::opts_chunk$set(   collapse = TRUE,   comment = "#&gt;",   fig.path = "man/figures/README-",   out.width = "100%" )</code></p>
-</div>
-<div id="covidham" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#covidham" class="anchor"></a>covidham</h1></div>
-<!-- badges: start -->
-<!-- badges: end -->
-<p>The goal of covidham is to …</p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<!-- You can install the released version of covidham from [CRAN](https://CRAN.R-project.org) with: -->
-<!-- ``` r -->
-<!-- install.packages("covidham") -->
-<!-- ``` -->
-<p>And the development version from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="co"># install.packages("devtools")</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"etc5523-2020/r-package-assessment-msobanq"</span><span class="op">)</span></pre></div>
-</div>
-<div id="example" class="section level2">
-<h2 class="hasAnchor">
-<a href="#example" class="anchor"></a>Example</h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
-<p>```{r example} library(covidham) library(tibble) library(dplyr)</p>
-</div>
-</div>
-<div id="the-data-set-is-huge-so-only-a-few-variables-are-selected-for-a-more-appropriate-vignette" class="section level1">
-<h1 class="hasAnchor">
-<a href="#the-data-set-is-huge-so-only-a-few-variables-are-selected-for-a-more-appropriate-vignette" class="anchor"></a>the data set is huge so only a few variables are selected for a more appropriate vignette</h1>
-</div>
-<div id="the-whole-data-set-can-be-accessed-from-using-the-covidham-function-covid_data-or-covidhamcovid_data" class="section level1">
-<h1 class="hasAnchor">
-<a href="#the-whole-data-set-can-be-accessed-from-using-the-covidham-function-covid_data-or-covidhamcovid_data" class="anchor"></a>the whole data set can be accessed from using the covidham function covid_data or covidham::covid_data</h1>
-<p>covid_data %&gt;% filter(continent == “Asia”) %&gt;% select(location, date, total_cases, stringency_index) %&gt;% tibble()</p>
-<pre><code>
-You can use the stringency() function to call a plot from the app. 
-
-```{r}
-covidham::stringency()</code></pre>
-<p>Other functions you can use while using covidham package</p>
-<p>```{r, eval=FALSE}</p>
-<p>covidham::launch_app()</p>
-<p>#to launch the inbuilt app</p>
-<pre><code>
-## Landing page
-
-Using the launch_app() function should take you to the following page. 
-
-```{r, fig.align='center', fig.cap="The Landing Page of my Shiny App", echo=FALSE}
-knitr::include_graphics("data/app launch page.PNG")
-</code></pre>
-</div>
-
+(This package contains a shiny application that revolves around different factors revolving around Covid-19. The data only encompuses Asia. Users can use this application to make their own interpretations on the subject.)
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
