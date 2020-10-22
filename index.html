@@ -68,57 +68,66 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
+
+<hr>
+<div id="output-github_document" class="section level2">
+<h2 class="hasAnchor">
+<a href="#output-github_document" class="anchor"></a>output: github_document</h2>
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+<p><code>{r, include = FALSE} knitr::opts_chunk$set(   collapse = TRUE,   comment = "#&gt;",   fig.path = "man/figures/README-",   out.width = "100%" )</code></p>
+</div>
 <div id="covidham" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#covidham" class="anchor"></a>covidham</h1></div>
 <!-- badges: start -->
 <!-- badges: end -->
-<p>The goal of covidham is to is for user to get access to the covid data set, functions and the application.</p>
+<p>The goal of covidham is to …</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <!-- You can install the released version of covidham from [CRAN](https://CRAN.R-project.org) with: -->
 <!-- ``` r -->
 <!-- install.packages("covidham") -->
-<pre><code>
-The development version can be installed from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("etc5523-2020/r-package-assessment-msobanq")</code></pre>
+<!-- ``` -->
+<p>And the development version from <a href="https://github.com/">GitHub</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="co"># install.packages("devtools")</span>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"etc5523-2020/r-package-assessment-msobanq"</span><span class="op">)</span></pre></div>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example" class="anchor"></a>Example</h2>
 <p>This is a basic example which shows you how to solve a common problem:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">covidham</span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/">tibble</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span>
-
-<span class="co"># the data set is huge so only a few variables are selected for a more appropriate vignette</span>
-
-<span class="va">covid_data</span> <span class="op">%&gt;%</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Asia"</span><span class="op">)</span> <span class="op">%&gt;%</span> 
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">location</span>, 
-         <span class="va">date</span>, 
-         <span class="va">total_cases</span>, 
-         <span class="va">stringency_index</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 11,408 x 4</span>
-<span class="co">#&gt;    location    date       total_cases stringency_index</span>
-<span class="co">#&gt;    &lt;chr&gt;       &lt;chr&gt;            &lt;dbl&gt;            &lt;dbl&gt;</span>
-<span class="co">#&gt;  1 Afghanistan 2019-12-31           0               NA</span>
-<span class="co">#&gt;  2 Afghanistan 2020-01-01           0                0</span>
-<span class="co">#&gt;  3 Afghanistan 2020-01-02           0                0</span>
-<span class="co">#&gt;  4 Afghanistan 2020-01-03           0                0</span>
-<span class="co">#&gt;  5 Afghanistan 2020-01-04           0                0</span>
-<span class="co">#&gt;  6 Afghanistan 2020-01-05           0                0</span>
-<span class="co">#&gt;  7 Afghanistan 2020-01-06           0                0</span>
-<span class="co">#&gt;  8 Afghanistan 2020-01-07           0                0</span>
-<span class="co">#&gt;  9 Afghanistan 2020-01-08           0                0</span>
-<span class="co">#&gt; 10 Afghanistan 2020-01-09           0                0</span>
-<span class="co">#&gt; # ... with 11,398 more rows</span></pre></div>
+<p>```{r example} library(covidham) library(tibble) library(dplyr)</p>
 </div>
 </div>
+<div id="the-data-set-is-huge-so-only-a-few-variables-are-selected-for-a-more-appropriate-vignette" class="section level1">
+<h1 class="hasAnchor">
+<a href="#the-data-set-is-huge-so-only-a-few-variables-are-selected-for-a-more-appropriate-vignette" class="anchor"></a>the data set is huge so only a few variables are selected for a more appropriate vignette</h1>
+</div>
+<div id="the-whole-data-set-can-be-accessed-from-using-the-covidham-function-covid_data-or-covidhamcovid_data" class="section level1">
+<h1 class="hasAnchor">
+<a href="#the-whole-data-set-can-be-accessed-from-using-the-covidham-function-covid_data-or-covidhamcovid_data" class="anchor"></a>the whole data set can be accessed from using the covidham function covid_data or covidham::covid_data</h1>
+<p>covid_data %&gt;% filter(continent == “Asia”) %&gt;% select(location, date, total_cases, stringency_index) %&gt;% tibble()</p>
+<pre><code>
+You can use the stringency() function to call a plot from the app. 
+
+```{r}
+covidham::stringency()</code></pre>
+<p>Other functions you can use while using covidham package</p>
+<p>```{r, eval=FALSE}</p>
+<p>covidham::launch_app()</p>
+<p>#to launch the inbuilt app</p>
+<pre><code>
+## Landing page
+
+Using the launch_app() function should take you to the following page. 
+
+```{r, fig.align='center', fig.cap="The Landing Page of my Shiny App", echo=FALSE}
+knitr::include_graphics("data/app launch page.PNG")
+</code></pre>
+</div>
+
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
