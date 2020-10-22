@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![R build
+status](https://github.com/etc5523-2020/r-package-assessment-msobanq/workflows/R-CMD-check/badge.svg)](https://github.com/etc5523-2020/r-package-assessment-msobanq/actions)
 <!-- badges: end -->
 
 The goal of covidham is to is for user to get access to the covid data
