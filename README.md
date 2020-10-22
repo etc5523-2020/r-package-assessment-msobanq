@@ -63,7 +63,7 @@ Launching the app should take you to this page of the app
 
 <div class="figure" style="text-align: center">
 
-<img src="data/app launch page.PNG" alt="The Landing Page of my Shiny App" width="100%" />
+<img src="inst/extdata/app launch page.PNG" alt="The Landing Page of my Shiny App" width="100%" />
 
 <p class="caption">
 

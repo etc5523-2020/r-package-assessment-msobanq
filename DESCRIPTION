@@ -18,7 +18,8 @@ Depends:
 Imports: 
     tibble,
     shiny,
-    readr
+    readr,
+    plotly
 Suggests: 
     knitr,
     rmarkdown,
