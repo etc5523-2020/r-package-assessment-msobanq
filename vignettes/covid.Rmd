@@ -34,3 +34,16 @@ covid_data %>% filter(continent == "Asia") %>%
 
 
 ```
+
+Use the stringency function to get the plot for asian countries stringency index plot. 
+
+```{r,eval=FALSE, echo=TRUE}
+stringency()
+```
+
+To launch the app use the funtion 
+
+```{r,eval=FALSE, echo=TRUE}
+launch_app()
+```
+
