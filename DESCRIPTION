@@ -1,5 +1,5 @@
 Package: covidham
-Title: Covid-19 Data on Asian Countries 
+Title: Covid-19 App on Asian Countries 
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Muhammad Soban",

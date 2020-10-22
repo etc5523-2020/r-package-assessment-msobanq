@@ -5,7 +5,7 @@
 #' 
 #' @description The stringency function allows the users to call the plot and use it, as deemed appropriate.
 #' 
-#' 
+#' @param input the given input to draw the plot from the app
 #' 
 #' 
 #' 

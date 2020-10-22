@@ -4,7 +4,7 @@
 \name{covidham-package}
 \alias{covidham}
 \alias{covidham-package}
-\title{covidham: Covid-19 Data on Asian Countries}
+\title{covidham: Covid-19 App on Asian Countries}
 \description{
 This package contains a shiny application that revolves around different factors revolving around Covid-19. The data only encompuses Asia. Users can use this application to make their own interpretations on the subject.
 }
