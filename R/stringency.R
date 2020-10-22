@@ -1,9 +1,9 @@
 #' 
 #' 
 #' 
+#' @title stringency function creates a plotly plot by calling a part of the app, the plot shows the stringency index of asian countries and plotly allows the user to engage in a variety of ways.
 #' 
-#' 
-#' 
+#' @description The stringency function allows the users to call the plot and use it, as deemed appropriate.
 #' 
 #' 
 #' 

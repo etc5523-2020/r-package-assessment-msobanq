@@ -1,4 +1,8 @@
+#' Launches the shiny app from this function
 #' 
+#' The launch_app() function searches the directory provided to access the app.R from the inst folder
+#' 
+#' The path has been stored in the appDir (app directory)
 #' 
 #' @export 
 #' 

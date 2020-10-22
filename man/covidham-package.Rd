@@ -6,7 +6,15 @@
 \alias{covidham-package}
 \title{covidham: Covid-19 Data on Asian Countries}
 \description{
-(This package contains a shiny application that revolves around different factors revolving around Covid-19. The data only encompuses Asia. Users can use this application to make their own interpretations on the subject.)
+This package contains a shiny application that revolves around different factors revolving around Covid-19. The data only encompuses Asia. Users can use this application to make their own interpretations on the subject.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/etc5523-2020/r-package-assessment-msobanq}
+  \item Report bugs at \url{https://github.com/etc5523-2020/r-package-assessment-msobanq/issues}
+}
+
 }
 \author{
 \strong{Maintainer}: Muhammad Soban Qasim \email{mqas0003@student.monash.edu} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
