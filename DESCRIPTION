@@ -16,9 +16,12 @@ RoxygenNote: 7.1.1
 Depends: 
     R (>= 2.10)
 Imports: 
-    tibble
+    tibble,
+    shiny,
+    readr
 Suggests: 
     knitr,
     rmarkdown,
-    dplyr
+    dplyr,
+    testthat
 VignetteBuilder: knitr

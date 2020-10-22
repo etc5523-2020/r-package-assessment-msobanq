@@ -19,4 +19,4 @@ stringency <- function(input) {p1 <- covid_data %>% filter(continent == "Asia") 
   geom_line() + ggtitle("Stringency Index of Asian Countries") + scale_color_discrete(name = "Country") + 
   scale_x_date(date_labels = "%B")
 
-ggplotly(p1)}
+plotly::ggplotly(p1)}
