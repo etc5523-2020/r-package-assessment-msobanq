@@ -61,14 +61,4 @@ covidham::launch_app()
 
 Launching the app should take you to this page of the app
 
-<div class="figure" style="text-align: center">
-
-<img src="man/image/page.PNG" alt="The Landing Page of my Shiny App" width="100%" />
-
-<p class="caption">
-
-The Landing Page of my Shiny App
-
-</p>
-
-</div>
+![](man/image/page.PNG)
