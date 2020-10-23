@@ -61,4 +61,4 @@ covidham::launch_app()
 
 Launching the app should take you to this page of the app
 
-![](man/image/page.PNG)
+![](man/figures/page.PNG)
