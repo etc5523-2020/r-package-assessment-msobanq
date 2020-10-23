@@ -1,2 +1,10 @@
 ^\.Rproj\.user$
 ^\.github$
+^.*\.Rproj$
+^README\.Rmd$
+^doc$
+^Meta$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^LICENSE\.md$
