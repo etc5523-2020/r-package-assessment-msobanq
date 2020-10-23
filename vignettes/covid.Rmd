@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 The app is simple to launch.
 
-The app helps users to interact and help explore covid-19 cases in Asia. The app also refelcts of other underlying factors tat might be contributing to the pandemic indefinitely. This data is sourced from. 
+The app helps users to interact and help explore covid-19 cases in Asia. The app also reflects of other underlying factors that might be contributing to the pandemic indefinitely. 
 
 ```{r setup, message=FALSE, warning=FALSE}
 library(covidham)
@@ -35,15 +35,16 @@ covid_data %>% filter(continent == "Asia") %>%
 
 ```
 
-Use the stringency function to get the plot for asian countries stringency index plot. 
+Use the stringency function to get the asian countries stringency index plot. 
 
 ```{r,eval=FALSE, echo=TRUE}
 stringency()
 ```
 
-To launch the app use the funtion 
+To launch the app use the function 
 
 ```{r,eval=FALSE, echo=TRUE}
 launch_app()
 ```
+
 
