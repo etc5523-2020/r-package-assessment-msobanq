@@ -23,17 +23,26 @@ library(covidham)
 library(tibble)
 library(dplyr)
 
-# the data set is huge so only a few variables are selected for a more appropriate vignette
+# variables in the data set
 
-covid_data %>% filter(continent == "Asia") %>% 
-  select(location, 
-         date, 
-         total_cases, 
-         stringency_index) %>% tibble()
 
+glimpse(covid_data)
 
 
 ```
+
+
+```{r}
+
+# although the app wraps around asian countries, the dataset contains data on the whole world
+
+covid_data %>% filter(continent == "Europe") %>% 
+  select(location, 
+         date, 
+         stringency_index) %>% tibble() 
+```
+
+
 
 Use the stringency function to get the asian countries stringency index plot. 
 
